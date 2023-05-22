@@ -1,0 +1,23 @@
+{# Home HTML #}
+{% extends "base.html" %}
+
+{% block title %}
+<title>Home Page</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row text-center lead">
+        <div class="text-center text-white p-3">
+            <h1>Welcome to CodeWithRams</h1>
+        </div>
+        <div class="col-lg-12 p-3">
+            <div class="bg-primary p-3">
+                <a class="text-white" href="{{url_for('signup_form')}}">Sign up</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}
